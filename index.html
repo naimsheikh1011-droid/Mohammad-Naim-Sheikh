@@ -3,18 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammad Naim Sheikh — Civil Engineering Portfolio</title>
+<title>Mohammad Naim Sheikh's Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0a1420;
+    --bg:#000000;
     --bg-elev:#0e1d2d;
-    --bg-panel:#122437;
-    --bg-panel2:#0f1f30;
-    --grid:rgba(146,197,224,.055);
-    --line:rgba(146,197,224,.16);
-    --line-soft:rgba(146,197,224,.09);
+    --bg-panel:#6888b877;
+    --bg-panel2:#0e1e30;
+    --line:rgba(134, 187, 211, 0.281);
+    --line-soft:rgba(248, 205, 86, 0.959);
     --text:#e9f1f7;
     --text-mid:#a9bdcf;
     --text-dim:#6a7f93;
@@ -29,8 +28,7 @@
   body{
     margin:0;
     background:
-      linear-gradient(var(--grid) 1px, transparent 1px) 0 0/44px 44px,
-      linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0/44px 44px,
+      
       var(--bg);
     color:var(--text);
     font-family:'IBM Plex Sans', sans-serif;
@@ -62,7 +60,7 @@
     position:sticky;top:0;z-index:100;
     background:rgba(10,20,32,.86);
     backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line-soft);
+    border-bottom:1px solid;
   }
   .nav-inner{
     max-width:1180px;margin:0 auto;padding:0 32px;
@@ -160,10 +158,9 @@
   .stat-strip{
     margin-top:44px;
     display:grid;grid-template-columns:repeat(4,1fr);
-    border:1px solid var(--line-soft);
     background:var(--bg-panel2);
   }
-  .stat{padding:20px 18px;border-right:1px solid var(--line-soft);}
+  .stat{padding:20px 18px;border-right:1px solid;}
   .stat:last-child{border-right:none;}
   .stat .num{font-family:'Space Grotesk';font-size:26px;font-weight:700;color:var(--cyan);}
   .stat .lbl{font-family:'IBM Plex Mono';font-size:10.5px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.06em;margin-top:4px;}
@@ -198,7 +195,6 @@
 
   /* ---------- PROJECTS ---------- */
   .proj{
-    border:1px solid var(--line-soft);
     background:var(--bg-elev);
     margin-bottom:28px;
     display:grid;grid-template-columns:1.15fr 1fr;
@@ -237,7 +233,7 @@
   .tl-item li::marker{color:var(--gold);}
 
   /* ---------- EDUCATION ---------- */
-  .edu-card{border:1px solid var(--line-soft);background:var(--bg-elev);padding:28px 30px;margin-bottom:20px;}
+  .edu-card{background:var(--bg-elev);padding:28px 30px;margin-bottom:20px;}
   .edu-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:6px;}
   .edu-top h3{font-size:19px;}
   .edu-score{font-family:'IBM Plex Mono';font-size:13px;color:var(--gold);}
@@ -247,13 +243,13 @@
     text-align:left;font-family:'IBM Plex Mono';font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
     color:var(--text-dim);padding:8px 10px;border-bottom:1px solid var(--line);
   }
-  .sem-table td{padding:8px 10px;border-bottom:1px solid var(--line-soft);color:var(--text-mid);}
+  .sem-table td{padding:8px 10px;border-bottom:1px solid;color:var(--text-mid);}
   .sem-table td.g{font-family:'IBM Plex Mono';color:var(--cyan);}
   .sem-block{margin-top:8px;}
   .sem-block summary{
     cursor:pointer;font-family:'IBM Plex Mono';font-size:12.5px;color:var(--blue);
     padding:10px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;
-    border-top:1px dashed var(--line-soft);
+    ;
   }
   .sem-block summary::-webkit-details-marker{display:none;}
   .sem-block summary::after{content:'+';font-size:16px;color:var(--text-dim);}
@@ -294,7 +290,7 @@
   .lightbox-close:hover{color:var(--cyan);border-color:var(--cyan);}
 
   /* ---------- ACHIEVEMENTS ---------- */
-  .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);}
+  .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;}
   .ach-card{background:var(--bg-elev);padding:26px 24px;}
   .ach-icon{font-family:'IBM Plex Mono';font-size:11px;color:var(--warm);letter-spacing:.08em;margin-bottom:14px;text-transform:uppercase;}
   .ach-card p{font-size:14.5px;color:var(--text-mid);margin:0;}
@@ -302,7 +298,7 @@
 
   /* ---------- REFERENCES ---------- */
   .ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .ref-card{border:1px solid var(--line-soft);padding:26px;background:var(--bg-elev);}
+  .ref-card{padding:26px;background:var(--bg-elev);}
   .ref-card h4{font-size:16px;margin-bottom:4px;}
   .ref-card .role{font-family:'IBM Plex Mono';font-size:12px;color:var(--cyan);margin-bottom:14px;}
   .ref-card .contact{font-family:'IBM Plex Mono';font-size:12px;color:var(--text-dim);line-height:1.9;}
@@ -316,13 +312,13 @@
     background:var(--bg-panel2);
   }
   .tb-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;}
-  .tb-top>div{padding:22px 26px;border-right:1px solid var(--line-soft);}
+  .tb-top>div{padding:22px 26px;border-right:1px solid;}
   .tb-top>div:last-child{border-right:none;}
   .tb-lbl{font-family:'IBM Plex Mono';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px;}
   .tb-val{font-family:'Space Grotesk';font-size:15px;color:var(--text);font-weight:600;}
   .tb-val.mono{font-family:'IBM Plex Mono';font-weight:400;font-size:13px;}
   .tb-bottom{
-    border-top:1px solid var(--line-soft);padding:18px 26px;
+    border-top:1px solid;padding:18px 26px;
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
     font-family:'IBM Plex Mono';font-size:11.5px;color:var(--text-dim);
   }
@@ -352,7 +348,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="brand"><span class="brand-mark">MS</span> Naim Sheikh</div>
+    <div class="brand"><span class="brand-mark">NS</span> Naim Sheikh</div>
     <nav class="links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -361,7 +357,7 @@
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="mailto:naimsheikh101@gmail.com">Hire Me →</a>
+    <a class="nav-cta" href="mailto:naimsheikh1011@gmail.com">Hire Me →</a>
   </div>
 </header>
 
@@ -369,10 +365,10 @@
 <section class="hero" style="border-bottom:1px solid var(--line-soft);padding-top:76px;">
   <div class="wrap hero-grid">
     <div>
-      <div class="hero-tag mono">SHEET CV–01 &nbsp;·&nbsp; SCALE NTS &nbsp;·&nbsp; DHAKA, BANGLADESH</div>
+      <div class="hero-tag mono">DHAKA, BANGLADESH</div>
       <h1>Mohammad Naim<br><span>Sheikh</span></h1>
       <div class="hero-sub mono">Civil Engineering Undergraduate — University of Dhaka</div>
-      <p class="hero-desc">Founder of Sheikh Educational Studio and a structural-engineering enthusiast who builds analysis tools as fast as he teaches with them. Three years spent turning dense STEM material into results — for over 50 students, and counting.</p>
+      <p class="hero-desc">NCTB-CAIE Instructor and a structural-engineering enthusiast who builds analysis tools as fast as he teaches with them. Three years spent turning dense STEM material into results — for over 50 students, and counting.</p>
       <div class="hero-links">
         <a class="btn btn-solid" href="mailto:naimsheikh1011@gmail.com">naimsheikh1011@gmail.com</a>
         <a class="btn btn-ghost" href="https://linkedin.com/in/mohammadnaimsheikh" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -444,7 +440,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow">02 — Engineering Tools</div>
+        <div class="eyebrow">02 — Engineering Projects</div>
         <h2>Built to check my own work<br>— and now yours.</h2>
       </div>
       <div class="sec-note">A small suite of structural-analysis calculators, applying course theory as working software.</div>
@@ -453,8 +449,8 @@
     <div class="proj">
       <div class="proj-media"><img src="StructCalc column.png" alt="StructCalc column analysis and design tool screenshot"></div>
       <div class="proj-body">
-        <div class="proj-tag">Reinforced Concrete Design</div>
-        <h3>StructCalc — Column Analysis &amp; Design</h3>
+        <div class="proj-tag"><a class="btn btn-ghost" href="https://naimsheikh1011-droid.github.io/StructCalc-Column/" target="_blank" rel="noopener">Visit the Project & Try by Yourself ↗</a></div>
+        <h3>StructCalc — Column Analysis &amp; Design</h3> 
         <p>An interactive RC column designer covering rectangular tied sections: axial capacity, slenderness classification, tie/spiral spacing checks, and a live P–M interaction diagram, all recalculated from the governing ACI-style equations as inputs change.</p>
         <div class="spec-row">
           <span><b>Checks:</b> ρg limits, tie spacing, axial DCR</span>
@@ -466,7 +462,7 @@
     <div class="proj">
       <div class="proj-media"><img src="StructCalc.png" alt="Flexural beam analyzer tool screenshot"></div>
       <div class="proj-body">
-        <div class="proj-tag">Reinforced Concrete Design</div>
+        <div class="proj-tag"><a class="btn btn-ghost" href="https://naimsheikh1011-droid.github.io/StructCalc-Beam/" target="_blank" rel="noopener">Visit the Project & Try by Yourself ↗</a></div>
         <h3>Flexural Beam Analyzer</h3>
         <p>A singly-reinforced beam capacity checker that derives the stress block depth, neutral axis, and design moment capacity from section and steel inputs, then flags whether the section satisfies ductility, minimum steel, and demand-capacity requirements.</p>
         <div class="spec-row">
@@ -477,9 +473,23 @@
     </div>
 
     <div class="proj">
+      <div class="proj-media"><img src="Determinacy Stability & Force Board.png" alt="Determinacy Stability & Force Board solver screenshot"></div>
+      <div class="proj-body">
+        <div class="proj-tag"><a class="btn btn-ghost" href="https://naimsheikh1011-droid.github.io/Determinacy-Stability-Force-Board/" target="_blank" rel="noopener">Visit the Project & Try by Yourself ↗</a></div>
+        <h3>Determinacy Stability & Force Board</h3>
+        <p>A full plane-truss solver built on the direct stiffness method: define nodes, members, point/UDL/VDL loads, and get member forces, nodal displacements, and axial force diagrams for statically determinate or indeterminate trusses.</p>
+        <div class="spec-row">
+          <span><b>Handles:</b> 10 nodes · 17 members in the sample run</span>
+          <span><b>Output:</b> member force table, tension/compression, Σ = 0 checks</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="proj">
       <div class="proj-media"><img src="TRUSSCALC pro.png" alt="TrussCalc Pro direct stiffness method truss solver screenshot"></div>
       <div class="proj-body">
-        <div class="proj-tag">Structural Analysis</div>
+        <div class="proj-tag"><a class="btn btn-ghost" href="https://naimsheikh1011-droid.github.io/TRUSSCALC-pro/" target="_blank" rel="noopener">Visit the Project & Try by Yourself ↗</a></div>
         <h3>TrussCalc Pro — Direct Stiffness Solver</h3>
         <p>A full plane-truss solver built on the direct stiffness method: define nodes, members, point/UDL/VDL loads, and get member forces, nodal displacements, and axial force diagrams for statically determinate or indeterminate trusses.</p>
         <div class="spec-row">
